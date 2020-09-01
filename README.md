@@ -24,9 +24,9 @@
 1. Declare a variable called `date` and get the current date (you may need to research the `Date` method on MDN or W3Schools).
 1. Using your `date` variable, find a method to **get** the current month. Save that value to a variable called `month`. 
 1. Write `month` to the console and note it's return value. Notice something odd? Adjust it so it reflects the current months' number.
-1. Set a new variable called `isJanuary` and set it equal to a ternary operator that determines if  `month` equals 1. If true, have the statement return 'It is January' and 'It isn't January', if false.
+1. Set a new variable called `isSeptember` and set it equal to a ternary operator that determines if  `month` equals 1. If true, have the statement return 'It is January' and 'It isn't January', if false.
 1. How can we include an apostrophe in a string with single quotes? (you may need to research this).
-1. Console log `isJanuary`
+1. Console log `isSeptember`
 
 #### Exercise 3
 1. Given the following array, write a switch/case statement and determine an output based on each array item.  
