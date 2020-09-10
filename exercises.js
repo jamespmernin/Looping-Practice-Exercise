@@ -77,9 +77,48 @@ console.log(dupNumber);
 
 //Bonus 3
 function sumPrimes(n) {
-
+  let sum = 0;
+  let primes = firstNPrimes(n);
+  for (let i = 0; i < primes.length; i++) {
+    sum += primes[i];
+  }
+  return sum;
 }
 
-console.log(sumPrimes(1)); // should be 2
-console.log(sumPrimes(2)); // should be 5
-console.log(sumPrimes(5)); // should be 28
+/* 
+ * The isPrime() and firstNPrimes() functions are courtesy of
+ * https://repl.it/@alexhc/returns-an-array-of-the-first-n-prime-numbers#main.js
+ */
+function isPrime(number) {
+  if (number < 2) {
+    return false;
+  }
+
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function firstNPrimes(n) {
+  let primes = [];
+  let num = 2;
+
+  while (primes.length < n) {
+    if (isPrime(num)) {
+      primes.push(num);
+    }
+
+    num += 1;
+  }
+
+  return primes;
+}
+
+console.log(`The sum of the first 1 prime numbers is ${sumPrimes(1)}.`); // should be 2
+console.log(`The sum of the first 1 prime numbers is ${sumPrimes(2)}.`); // should be 5
+console.log(`The sum of the first 1 prime numbers is ${sumPrimes(5)}.`); // should be 28
+console.log(`The sum of the first 1 prime numbers is ${sumPrimes(10)}.`); // should be 129
