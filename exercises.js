@@ -50,4 +50,17 @@ while (accountBalance <= 100) {
   accountBalance += 10;
 }
 
-//Bonus
+//Bonus 1
+let fishArray = ["Cod", "Tuna", "Salmon", "Swordfish"];
+let longestWord = '';
+for (let i = 0; i < fishArray.length; i++) {
+  if (fishArray[i].length > longestWord.length) {
+    longestWord = fishArray[i];
+  }
+}
+console.log(`The length of the longest word is ${longestWord.length} and the longest word is ${longestWord}.`)
+
+//Bonus 2
+
+
+//Bonus 3
