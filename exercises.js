@@ -15,7 +15,11 @@ if (temp <= 32) {
 }
 
 //Exercise 2
-
+let date = new Date(Date.now());
+let month = date.getMonth() + 1;
+console.log(month);
+let isSeptember = (month === 1) ? "It is January" : "It isn't January";
+console.log(isSeptember);
 
 //Exercise 3
 
