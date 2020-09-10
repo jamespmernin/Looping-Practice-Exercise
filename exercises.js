@@ -44,6 +44,10 @@ for (let i = 0; i < foodsArray.length; i++) {
 }
 
 //Exercise 4
-
+let accountBalance = 0;
+while (accountBalance <= 100) {
+  console.log(`My checking account balance is $${accountBalance}!\n`);
+  accountBalance += 10;
+}
 
 //Bonus
