@@ -15,8 +15,8 @@ if (temp <= 32) {
 }
 
 //Exercise 2
-let date = new Date(); // defaults to Date.now(), the current date
-let month = date.getMonth() + 1;
+let month = new Date(); // defaults to 'Date.now()', the current date
+month = month.getMonth() + 1;
 console.log(`The (numerical) month is ${month}.`);
 let isSeptember = (month === 1) ? "It is January" : "It isn't January";
 console.log(isSeptember);
