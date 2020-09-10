@@ -120,6 +120,6 @@ function firstNPrimes(n) {
 }
 
 console.log(`The sum of the first 1 prime numbers is ${sumPrimes(1)}.`); // should be 2
-console.log(`The sum of the first 1 prime numbers is ${sumPrimes(2)}.`); // should be 5
-console.log(`The sum of the first 1 prime numbers is ${sumPrimes(5)}.`); // should be 28
-console.log(`The sum of the first 1 prime numbers is ${sumPrimes(10)}.`); // should be 129
+console.log(`The sum of the first 2 prime numbers is ${sumPrimes(2)}.`); // should be 5
+console.log(`The sum of the first 5 prime numbers is ${sumPrimes(5)}.`); // should be 28
+console.log(`The sum of the first 10 prime numbers is ${sumPrimes(10)}.`); // should be 129
