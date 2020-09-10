@@ -61,6 +61,25 @@ for (let i = 0; i < fishArray.length; i++) {
 console.log(`The length of the longest word is ${longestWord.length} and the longest word is ${longestWord}.`)
 
 //Bonus 2
+function findDup(numArray) {
+  for (let i = 0; i < numArray.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (numArray[i] === numArray[j]) {
+        return numArray[i];
+      }
+    }
+  }
+}
 
+myNumArray = [1, 4, 2, 5, 3, 5, 3];
+dupNumber = findDup(myNumArray);
+console.log(dupNumber);
 
 //Bonus 3
+function sumPrimes(n) {
+
+}
+
+console.log(sumPrimes(1)); // should be 2
+console.log(sumPrimes(2)); // should be 5
+console.log(sumPrimes(5)); // should be 28
