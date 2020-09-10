@@ -22,7 +22,26 @@ let isSeptember = (month === 1) ? "It is January" : "It isn't January";
 console.log(isSeptember);
 
 //Exercise 3
-
+let foodsArray = ['almonds', 'potato chips', 'ice cream', 'filet mignon'];
+for (let i = 0; i < foodsArray.length; i++) {
+  switch (foodsArray[i]) {
+    case 'almonds':
+      console.log("That's a healthy snack.");
+      break;
+    case 'potato chips':
+      console.log("Something salty, nice!");
+      break;
+    case 'ice cream':
+      console.log("Something sweet, ok!");
+      break;
+    case 'filet mignon':
+      console.log("Eating like royalty tonight.");
+      break;
+    default:
+      console.log("I don't know what to eat.");
+      break;
+  }
+}
 
 //Exercise 4
 
