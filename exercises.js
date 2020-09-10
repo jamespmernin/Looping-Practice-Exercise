@@ -17,7 +17,7 @@ if (temp <= 32) {
 //Exercise 2
 let date = new Date(); // defaults to Date.now(), the current date
 let month = date.getMonth() + 1;
-console.log(month);
+console.log(`The (numerical) month is ${month}.`);
 let isSeptember = (month === 1) ? "It is January" : "It isn't January";
 console.log(isSeptember);
 
@@ -73,7 +73,7 @@ function findDup(numArray) {
 
 myNumArray = [1, 4, 2, 5, 3, 5, 3];
 dupNumber = findDup(myNumArray);
-console.log(dupNumber);
+console.log(`The first duplicate number found is ${dupNumber}.`);
 
 //Bonus 3
 function sumPrimes(n) {
